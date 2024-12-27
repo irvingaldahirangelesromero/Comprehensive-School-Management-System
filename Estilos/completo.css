@@ -1,0 +1,284 @@
+/* Estilo para el menú y submenú */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	width: 100%;
+	height: 10vh;
+}
+
+header #main-menu {
+	background: #222;
+	float: left;
+	height: 80px;
+	line-height: 30px;
+	width: 100%;
+}
+
+header nav#menu-area {
+	margin: 0 auto;
+	padding: 0 10px;
+	position: relative;
+	width: 1150px;
+}
+
+header nav#menu-area ul li {
+	float: left;
+	position: relative;
+	font-size: 10px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 180px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+header nav#menu-area ul li a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	line-height: 60px;
+}
+
+header nav#menu-area ul li:hover>a {
+	background: #555555;
+}
+
+header nav#menu-area ul li ul.submenu-1 {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0px;
+	top: 60px;
+	background: #222;
+	width: 180px;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease-out, visibility 0.1s 0.1s linear;
+}
+
+header nav#menu-area ul li ul.submenu-1 li {
+	border: none;
+	border-bottom: 1px solid #ccc;
+	clear: both;
+	margin-top: -15px;
+	padding: 0;
+	width: 180px;
+	transition: opacity 0.15s 0.15s ease-out, margin 0.3s 0.1s ease-out;
+}
+
+header nav#menu-area ul li:hover ul.submenu-1 {
+	opacity: 1;
+	visibility: visible;
+}
+
+header nav#menu-area ul li:hover ul.submenu-1 li {
+	margin-top: 0;
+	opacity: 1;
+}
+
+header nav#menu-area ul li ul.submenu-1 li ul.submenu-2 {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 61px;
+	top: 0px;
+	background: #222;
+	width: 180px;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+}
+
+ul.submenu-1 li ul.submenu-2 li {
+	border: none;
+	border-bottom: 1px solid #ccc;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	width: 180px;
+	opacity: 1;
+}
+
+header nav#menu-area ul li ul.submenu-1 li:hover ul.submenu-2 {
+	opacity: 1;
+	left: 180px;
+	visibility: visible;
+}
+
+/* Agregar imagen transparente en la parte izquierda del menú */
+header .logo {
+	float: left;
+	margin-right: 10px;
+}
+
+header .logo img {
+	height: 60px;
+	/*opacity: 0.8;*/
+}
+/* Estilos para el formulario */
+.form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form input[type="text"],
+  .form input[type="email"],
+  .form input[type="password"],
+  .form textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .form textarea {
+    resize: vertical;
+  }
+  
+  .form button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilos adicionales */
+  body {
+    background-color: #070606;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo para el pie de página */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+  }
+
+/* cuadro*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: 900px;
+  height: 400px;
+  background-color: #eee;
+  padding: 20px;
+}
+
+.box img{
+  width: 2500px;
+}
+
+.box p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0;
+} 
+
+  /* Tabla*/
+  .table-container {
+    background-color: red;
+    height: 250px;
+    overflow: auto;
+  }
+  
+  .centered-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100vw;
+    table-layout: fixed;
+  }
+  
+  .centered-table th,
+  .centered-table td {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .centered-table th {
+    background-color: #729ee0;
+    font-weight: bold;
+  }
+  
+  .centered-table tr:nth-child(even) td {
+    background-color: #d4d78a;
+  }
+  
+  .centered-table tr:hover td {
+    background-color: #83a3cb;
+  }
+  
+  .centered-table tr:first-child th,
+  .centered-table tr:first-child td {
+    background-color: #5e8f75;
+  }
+
+  /*botones*/
+  
+  .submit-button {
+    background-color: #4CAF50;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+
+  

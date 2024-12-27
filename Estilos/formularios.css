@@ -1,0 +1,189 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "century gothic";
+}
+
+/* Body Styling */
+body {
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Form Styling */
+.form {
+    background-color: transparent;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px 40px;
+    box-shadow: 20px 25px 100px #0001;
+    border-radius: 14px;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+.form:hover{
+    padding: 30px 50px;
+    background-color: #00000008;
+}
+
+.form h2 {
+    text-align: left;
+    padding:  30px 0;
+    color: #ddd;
+    margin-left: 4%;
+    letter-spacing: 2px;
+}
+
+.form label {
+    display: block;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #333;
+    width: 300px;
+}
+
+.form input[type="text"],input[type="number"],input[type="password"],select {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    background-color: transparent;
+    font-family: Century Gothic;
+    letter-spacing: 2px;        
+    margin-top: 20px;
+    outline:none;
+    transition: 0.5s;
+    box-shadow: 4px 3px 17px #0001;
+}
+
+
+
+.form input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus {
+    background-color: #00000006;
+}
+
+.form input[type="text"]:hover,
+input[type="number"]:hover,
+input[type="password"]:hover {
+    background-color: #00000006;
+}
+
+.form input[type="file"] {
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+}
+
+.form button[type="submit"] {
+    border: none;
+    background-color: #00000005;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form button[type="submit"]:hover,.form button[type="submit"]:focus, select:focus {
+        background-color: #00000008;
+        outline: none;
+}
+
+.form.tbl{
+    max-width: 90vw;     
+    transition: 0.5s;
+}
+
+.form.tbl button{
+    margin-top: 30px;
+    color: #000;
+}
+
+/* Table Container Styling */
+
+/* Table Styling */
+.centered-table {
+    padding: 0;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #000000;
+    transition: 0.5s;
+}
+
+.centered-table th,
+.centered-table td {
+    padding: 12px 15px;
+    text-align: left;
+    transition: 0.5s;
+}
+
+.centered-table th {
+    background-color: #8f8f8f;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.centered-table tr:nth-child(even) {
+    background-color: #f2f2f2e3;
+    transition: 0.5s;
+}
+
+.centered-table tr:hover {
+    background-color: #e1e1e100;
+    transition: 0.5s;
+}
+
+
+select{
+    outline: none;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: none;
+}
+
+
+input[type="text"]:valid,
+input[type="number"]:valid {
+    border-left: 8px solid rgb(209, 244, 211);
+}
+
+input[type="password"]:valid {
+    border-left: 0px solid transparent;
+}
+
+input[type="text"]:invalid,
+input[type="password"]:invalid,
+input[type="number"]:invalid {
+    border-left: 8px solid rgb(250, 166, 166);
+}
+
+.input:invalid
+{
+    border-color: crimson;
+    background-color: lightpink;
+}
+
+.input:valid
+{
+    border-color:darkgreen;
+    background-color:lightblue;
+}

@@ -1,0 +1,72 @@
+  
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 20px;
+            background-color: transparent;
+        }
+        .header {
+            background: transparent;
+            color: #000;
+            padding-top: 30px;
+            min-height: 70px;
+        }
+        .header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            background: transparent;
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            width: calc(33.333% - 40px); /* Tres tarjetas por fila con márgenes */
+            float: left;
+    box-shadow: 20px 25px 100px #0001;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+        .card-content {
+            padding: 15px;
+            color: #000;
+            z-index: 100;
+            text-align: center;
+        }
+        .card-content h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .card-content p {
+            color: #070707;
+            font-size: 10px;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 40px); /* Dos tarjetas por fila en pantallas medianas */
+            }
+        }
+        @media (max-width: 480px) {
+            .card {
+                width: calc(100% - 40px); /* Una tarjeta por fila en pantallas pequeñas */
+            }
+        }
+   
